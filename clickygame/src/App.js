@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import artists from "./artists.json";
 import './App.css';
+import NavBar from "./components/NavBar";
 
 class App extends Component {
 
@@ -10,7 +11,12 @@ class App extends Component {
   // };
   render() {
     return (
-   
+      <nav className="nav">
+        <li>Artist Clicky Game</li>
+        <li>Click an image to begin</li>
+        <li>Score:  || Top Score:  </li>
+      </nav>
+
     );
   }
 }

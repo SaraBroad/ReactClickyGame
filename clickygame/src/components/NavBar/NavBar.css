@@ -1,0 +1,6 @@
+nav li {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    margin-top: 15px;
+}

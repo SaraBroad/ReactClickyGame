@@ -1,15 +1,16 @@
 import React from "react";
 import "./NavBar.css";
 
-// const NavBar = props => <Nav className="nav">{props.children}</header>
+const NavBar = props => <nav className="navbar">{props.children}</nav>
 
-const NavBar = props => (
+// const NavBar = props => (
 
-<nav className="nav">
+// <nav className="nav">
+// <li>Artist Clicky Game</li>
+// <li>Click an image to begin</li>
 
+// </nav>
 
-</nav>
-
-);
+// );
 
 export default NavBar;
