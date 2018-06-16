@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import artists from "./artists.json";
 import './App.css';
 import NavBar from "./components/NavBar";
+import Header from "./components/Header";
 
 class App extends Component {
 
