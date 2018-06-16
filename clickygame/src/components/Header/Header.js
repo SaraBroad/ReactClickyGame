@@ -1,15 +1,15 @@
 import React from "react";
 import "./Header.css";
 
-// const Header = props => <header className="header">{props.children}</header>
+const Header = props => <header className="headerStyle">{props.children}</header>
 
-const Header = props => (
+// const Header = props => (
 
-<header className="header">
+// <header className="header">
 
 
-</header>
+// </header>
 
-);
+// );
 
 export default Header;

@@ -1,5 +1,5 @@
 .navbar {
-    background: #6699ff;
+    background: #189696;
     height: 90px;
 }
 
@@ -11,7 +11,7 @@ nav li {
 }
 
 li {
-    color: #cc0066;
+    color: #841573;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     font-size: 20px;
 }
