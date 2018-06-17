@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
+import PhotoCard from "./components/PhotoCard";
 
 class App extends Component {
 
