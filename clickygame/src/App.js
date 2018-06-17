@@ -8,9 +8,21 @@ import PhotoCard from "./components/PhotoCard";
 
 class App extends Component {
 
-  // state = {
-  //   artists
-  // };
+  state = {
+    artists
+  };
+
+  //need handleIncrement
+  //.map to create an array of PhotoCard
+  //click here to begin
+  //indicator of you guessed correctly and incorrectly
+  //score set to 0
+  //when guess correctly score +1
+  //when guess correctly score = 0
+  //list high score
+  //shuffle through images
+
+
   render() {
     return (
       <div>
