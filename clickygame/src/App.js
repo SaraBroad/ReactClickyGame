@@ -35,6 +35,8 @@ shuffleArtists = artists => {
 }
 
 
+
+
   render() {
     return (
       <div>
