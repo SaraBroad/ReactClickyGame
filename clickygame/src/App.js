@@ -42,7 +42,7 @@ class App extends Component {
     if (artistClicked(0).clicked) {
 
       guesses = 0
-      message = "You guessed incorrectly."
+      message = "You guessed incorrectly!"
 
     //   why?
     //   for (let i = 0 ; i < matches.length ; i++){
@@ -56,8 +56,14 @@ class App extends Component {
       this.setState({topScore});
       this.setState({message});
 
+    } else {
+      artistClicked[0].clicked = true
+      score++
+      message = "You guessed correctly!"
     }
-  }
+
+
+  };
 
  
 
