@@ -25,23 +25,23 @@ class App extends Component {
   render() {
     return (
       <div>
-      <NavBar className="nav">
-        <li>Artist Clicky Game</li>
-        <li>Click an image to begin</li>
-        <li>Score:  || Top Score:  </li>
-      </NavBar>
-      <Header>
-      <h1>Clicky Game!</h1>
-      <h2>Click on an image to earn points, but don't click on an image more than once</h2>
-      </Header>
-      {this.state.artists.map(artist => (
-      <PhotoCard
-      id={artist.id}
-      key={artist.id}
-      name={artist.name}
-      image={artist.image}
-      />
-    ))}
+        <NavBar className="nav">
+          <li>Artist Clicky Game</li>
+          <li>Click an image to begin</li>
+          <li>Score:  || Top Score:  </li>
+        </NavBar>
+        <Header>
+          <h1>Clicky Game!</h1>
+          <h2>Click on an image to earn points, but don't click on an image more than once</h2>
+        </Header>
+        {this.state.artists.map(artist => (
+          <PhotoCard
+            id={artist.id}
+            key={artist.id}
+            name={artist.name}
+            image={artist.image}
+          />
+        ))}
       </div>
 
     );
