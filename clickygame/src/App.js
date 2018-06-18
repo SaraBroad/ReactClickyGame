@@ -8,16 +8,9 @@ import './App.css';
 
 let score = 0;
 let topScore = 0;
+let clickMessage = "";
 
-class App extends Component {
-
-  state = {
-    score,
-    topScore,
-    artists: artists
-  };
-
-  //need handleIncrement
+ //need handleIncrement
   //click here to begin
   //indicator of you guessed correctly and incorrectly
   //score set to 0
@@ -27,13 +20,48 @@ class App extends Component {
 
   //shuffle through images
 
-shuffleArtists = artists => {
-  for (let i = artists.length -1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [artists[i], arists[j]] = [artists[j], artists[i]];
+class App extends Component {
+
+  state = {
+    score,
+    topScore,
+    artists: artists
+  };
+
+  shuffleArtists = artists => {
+    for (let i = artists.length -1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [artists[i], arists[j]] = [artists[j], artists[i]];
+    }
+    return artists;
   }
-  return artists;
-}
+
+  setClicked = id => {
+    const artists = this.state.artists;
+    const artistClicked = this.state.artists.filter(artist => artist.id === id);
+    if (artistClicked(0).clicked) {
+
+      guesses = 0
+      message = "You guessed incorrectly."
+
+    //   why?
+    //   for (let i = 0 ; i < matches.length ; i++){
+    //     matches[i].clicked = false;
+    // }
+
+        // We always use the setState method to update a component's state
+      // this.setState({ count: this.state.count + 1 });
+
+      this.setState({score});
+      this.setState({topScore});
+      this.setState({message});
+
+    }
+  }
+
+ 
+
+
 
 
 
@@ -43,7 +71,7 @@ shuffleArtists = artists => {
       <div>
         <NavBar className="nav">
           <li>Artist Clicky Game</li>
-          <li>Click an image to begin</li>
+          <li>{this.state.clickMessage}</li>
           <li>Score: {this.state.score} || Top Score: {this.state.topScore}</li>
         </NavBar>
         <Header>
