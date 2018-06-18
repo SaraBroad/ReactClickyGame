@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-// import artists from "./artists.json";
+import artists from "./artists.json";
 import './App.css';
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
