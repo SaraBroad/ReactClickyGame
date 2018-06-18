@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import PhotoCard from "./components/PhotoCard";
+import Wrapper from "./components/Wrapper"
 import artists from "./artists.json";
 import './App.css';
 
@@ -34,6 +35,7 @@ class App extends Component {
           <h1>Clicky Game!</h1>
           <h2>Click on an image to earn points, but don't click on an image more than once</h2>
         </Header>
+        <Wrapper>
         {this.state.artists.map(artist => (
           <PhotoCard
             id={artist.id}
@@ -42,6 +44,7 @@ class App extends Component {
             image={artist.image}
           />
         ))}
+        </Wrapper>
       </div>
 
     );
