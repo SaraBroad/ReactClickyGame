@@ -32,6 +32,7 @@ shuffleArtists = artists => {
     const j = Math.floor(Math.random() * (i + 1));
     [artists[i], arists[j]] = [artists[j], artists[i]];
   }
+  return artists;
 }
 
 
@@ -43,7 +44,7 @@ shuffleArtists = artists => {
         <NavBar className="nav">
           <li>Artist Clicky Game</li>
           <li>Click an image to begin</li>
-          <li>Score:  || Top Score:  </li>
+          <li>Score: {this.state.score} || Top Score: {this.state.topScore}</li>
         </NavBar>
         <Header>
           <h1>Clicky Game!</h1>
