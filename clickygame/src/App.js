@@ -24,7 +24,15 @@ class App extends Component {
   //when guess correctly score +1
   //when guess correctly score = 0
   //list high score
+
   //shuffle through images
+
+shuffleArtists = artists => {
+  for (let i = artists.length -1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [artists[i], arists[j]] = [artists[j], artists[i]];
+  }
+}
 
 
   render() {
