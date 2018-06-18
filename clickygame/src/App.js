@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-import artists from "./artists.json";
-import './App.css';
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import PhotoCard from "./components/PhotoCard";
+import artists from "./artists.json";
+import './App.css';
 
 class App extends Component {
 
@@ -35,6 +34,14 @@ class App extends Component {
       <h1>Clicky Game!</h1>
       <h2>Click on an image to earn points, but don't click on an image more than once</h2>
       </Header>
+      {this.state.artists.map(artist => (
+      <PhotoCard
+      id={artist.id}
+      key={artist.id}
+      name={artist.name}
+      image={artist.image}
+      />
+    ))}
       </div>
 
     );
