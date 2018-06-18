@@ -6,14 +6,18 @@ import Wrapper from "./components/Wrapper"
 import artists from "./artists.json";
 import './App.css';
 
+let score = 0;
+let topScore = 0;
+
 class App extends Component {
 
   state = {
-    artists
+    score,
+    topScore,
+    artists: artists
   };
 
   //need handleIncrement
-  //.map to create an array of PhotoCard
   //click here to begin
   //indicator of you guessed correctly and incorrectly
   //score set to 0
