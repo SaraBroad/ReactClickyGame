@@ -25,13 +25,14 @@ class App extends Component {
   state = {
     score,
     topScore,
-    artists: artists
+    artists: artists,
+    clickMessage
   };
 
   shuffleArtists = artists => {
     for (let i = artists.length -1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [artists[i], arists[j]] = [artists[j], artists[i]];
+      [artists[i], artists[j]] = [artists[j], artists[i]];
     }
     return artists;
   }
@@ -41,25 +42,18 @@ class App extends Component {
     const artistClicked = this.state.artists.filter(artist => artist.id === id);
     if (artistClicked(0).clicked) {
 
-      score = 0
-      clickMessage = "You guessed incorrectly!"
-
-    //   why?
-    //   for (let i = 0 ; i < matches.length ; i++){
-    //     matches[i].clicked = false;
-    // }
-
-        // We always use the setState method to update a component's state
-      // this.setState({ count: this.state.count + 1 });
-
-      this.setState({score});
-      this.setState({topScore});
-      this.setState({clickMessage});
-
+      this.setState({
+        artists: artists,
+        score: 0,
+        clickMessage: "You guessed incorrectly!",
+        topScore: topScore
+      })
+      this.shuffleArtists(artists);
     } else {
       artistClicked[0].clicked = true
       score++
       clickMessage = "You guessed correctly!"
+      this.shuffleArray(artists)
     }
 
 
@@ -91,6 +85,7 @@ class App extends Component {
             key={artist.id}
             name={artist.name}
             image={artist.image}
+            setClicked={this.setClicked}
           />
         ))}
         </Wrapper>
