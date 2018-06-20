@@ -10,15 +10,15 @@ let score = 0;
 let topScore = 0;
 let clickMessage = "";
 
- //need handleIncrement
-  //click here to begin
-  //indicator of you guessed correctly and incorrectly
-  //score set to 0
-  //when guess correctly score +1
-  //when guess correctly score = 0
-  //list high score
+//need handleIncrement
+//click here to begin
+//indicator of you guessed correctly and incorrectly
+//score set to 0
+//when guess correctly score +1
+//when guess correctly score = 0
+//list high score
 
-  //shuffle through images
+//shuffle through images
 
 class App extends Component {
 
@@ -30,7 +30,7 @@ class App extends Component {
   };
 
   shuffleArtists = artists => {
-    for (let i = artists.length -1; i > 0; i--) {
+    for (let i = artists.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [artists[i], artists[j]] = [artists[j], artists[i]];
     }
@@ -51,15 +51,31 @@ class App extends Component {
       this.shuffleArtists(artists);
     } else {
       artistClicked[0].clicked = true
-      score++
+      score += 1
       clickMessage = "You guessed correctly!"
-      this.shuffleArray(artists)
+      this.shuffleArtists(artists)
+
+      if (score > topScore) {
+        topScore = score;
+        score += 1;
+
+        this.setState({
+          score: score,
+          topScore: topScore,
+        })
+        this.shuffleArtists(artists)
+      }
+
+      this.setState({
+        artists: artists,
+        score: score,
+        clickMessage: "You guessed correctly!", 
+      })
+      this.shuffleArtists(artists);
     }
-
-
   };
 
- 
+
 
 
 
@@ -79,15 +95,15 @@ class App extends Component {
           <h2>Click on an image to earn points, but don't click on an image more than once</h2>
         </Header>
         <Wrapper>
-        {this.state.artists.map(artist => (
-          <PhotoCard
-            id={artist.id}
-            key={artist.id}
-            name={artist.name}
-            image={artist.image}
-            setClicked={this.setClicked}
-          />
-        ))}
+          {this.state.artists.map(artist => (
+            <PhotoCard
+              id={artist.id}
+              key={artist.id}
+              name={artist.name}
+              image={artist.image}
+              setClicked={this.setClicked}
+            />
+          ))}
         </Wrapper>
       </div>
     );
