@@ -41,8 +41,8 @@ class App extends Component {
     const artistClicked = this.state.artists.filter(artist => artist.id === id);
     if (artistClicked(0).clicked) {
 
-      guesses = 0
-      message = "You guessed incorrectly!"
+      score = 0
+      clickMessage = "You guessed incorrectly!"
 
     //   why?
     //   for (let i = 0 ; i < matches.length ; i++){
@@ -54,12 +54,12 @@ class App extends Component {
 
       this.setState({score});
       this.setState({topScore});
-      this.setState({message});
+      this.setState({clickMessage});
 
     } else {
       artistClicked[0].clicked = true
       score++
-      message = "You guessed correctly!"
+      clickMessage = "You guessed correctly!"
     }
 
 
@@ -95,9 +95,7 @@ class App extends Component {
         ))}
         </Wrapper>
       </div>
-
     );
   }
 }
-
 export default App;
