@@ -1,0 +1,17 @@
+.navbar {
+    background: #189696;
+    height: 90px;
+}
+
+nav li {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+li {
+    color: #841573;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 25px;
+}

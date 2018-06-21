@@ -1,0 +1,19 @@
+.headerStyle {
+    text-align: center;
+    background-image: url("https://www.artnet.com/WebServices/images/ll00029lldePRJFgUKFJ3CfDrCWvaHBOcq4NF/gerhard-richter-fuji-(839-52).jpg");
+    height: 400px;
+    color: #060B0F;
+   position: absolute;
+   width: 100%;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 80px;
+    font-family: 'Acme', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Acme', sans-serif;
+}

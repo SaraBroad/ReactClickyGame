@@ -1,0 +1,74 @@
+[
+   {
+     "id": 1,
+     "name": "Gerhard Richter",
+     "image": "https://www.christies.com/media-library/images/features/articles/2016/09/30/richter/richter-abstraktes-bild.jpg",
+     "clicked": false
+   },
+   {
+    "id": 2,
+    "name": "Francis Bacon",
+    "image": "https://i.ytimg.com/vi/Uc7I6d3-S7A/hqdefault.jpg",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Jasper Johns",
+    "image": "https://www.thebroad.org/sites/default/files/art/exhibitions/johns_untitled_1975_web.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Kerry James Marshall",
+    "image": "https://static01.nyt.com/images/2018/05/19/arts/19briefs1/18combs--articleLarge-v2.jpg?quality=75&auto=webp&disable=upscale",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Kehinde Wiley",
+    "image": "https://www.artnews.com/wp-content/uploads/2018/04/PA_NPG_18_55-Obama-R.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "David Hockney",
+    "image": "https://cdn.shopify.com/s/files/1/1721/0879/products/RoadToYorkThroughSledmerePosterByDavidHockneyLS.jpg?v=1491777131",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Jean-Michel Basquiat",
+    "image": "https://daily.jstor.org/wp-content/uploads/2017/06/untitled_basquiat_painting_1050x700.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Gordon Parks",
+    "image": "https://timedotcom.files.wordpress.com/2018/02/andre-d-wagner-gordon-parks-bushwick-bedstuy-2.jpg?quality=85&w=1520",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "William Eggleston",
+    "image": "https://www.jamesmaherphotography.com/jamesmaherphotography/wp-content/uploads/2016/08/William_Eggleston_Photograph-17.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Henri Matisse",
+    "image": "https://www.henrimatisse.org/images/gallery/the-dance.jpg",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Diane Arbus",
+    "image": "https://darkroom-cdn.s3.amazonaws.com/2015/03/diane-arbus1.jpg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Dawoud Bey",
+    "image": "https://www.artic.edu/sites/default/files/blog/files/2012/05/Bey-Harlem-NY.jpg",
+    "clicked": false
+  }
+]
