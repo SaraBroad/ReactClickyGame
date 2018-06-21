@@ -38,9 +38,10 @@ class App extends Component {
   }
 
   setClicked = id => {
+    console.log("hello");
     const artists = this.state.artists;
     const artistClicked = this.state.artists.filter(artist => artist.id === id);
-    if (artistClicked(0).clicked) {
+    if (artistClicked[0].clicked) {
 
       this.setState({
         artists: artists,
@@ -57,7 +58,7 @@ class App extends Component {
 
       if (score > topScore) {
         topScore = score;
-        score += 1;
+      
 
         this.setState({
           score: score,

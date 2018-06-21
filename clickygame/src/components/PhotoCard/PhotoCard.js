@@ -21,14 +21,13 @@ import "./PhotoCard.css";
 const PhotoCard = props => (
     //need onclick event on className="card" - on click shuffle
 
-    <div className="card">
+    <div className="card" onClick={() => props.setClicked(props.id)}>
         <div className="img-container">
             <img alt={props.name} src={props.image} />
         </div>
         <div className="content">
             Artist Name: {props.name}
         </div>
-        <span onClick={() => props.setClicked(props.id)}></span>
     </div>
 );
 
